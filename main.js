@@ -26,10 +26,8 @@ function arrToStr(arr) {
     let left=0;
     let right=arr.length-1;
     while(left<right){
-        strArray.push(arr[left]);
-        left++;
-        strArray.push(arr[right]);
-        right--;
+        strArray.push(arr[left++]);
+        strArray.push(arr[right--]);
     }
     return strArray.join('');
 }
